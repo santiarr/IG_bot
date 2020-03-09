@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IG Bot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}" >
+</head>
+<body>
+<h4>By Santiago Arredondo</h4>
+<div class='title'>
+    <img id='IGicon' src="{{url_for('static', filename='images/Instagram-Icon.png')}}" width="8%">
+    <h1 id="'title">Instagram Bot</h1>
+</div>
+
+<div id="main-box">
+    <form method="post" name='passdata' action="." style="font-size: 25px;">
+        <div style="padding-left:50px;font-family: Arial; color: white; font-weight: bold;">
+            <div style="display:block; padding-top: 50px; padding-bottom: 20px" >
+                <label>Username: </label>
+                <input name = 'username' type="text">
+            </div>
+            <div style="display:block; padding-bottom: 20px">
+                <label>password: </label>
+                <input name = 'password' type="password">
+            </div>
+            <div style="display:block; padding-bottom: 20px">
+                <label>Number of posts to like (Limit is 700): </label>
+                <input name ='num-likes' type="text">
+            </div>
+            <div style="display:block;padding-top: 100px padding-bottom: 20px">
+                <label >Number of posts to comment (Limit is 250):</label>
+                <input name="num-comments" type="text">
+            </div>
+            <input type="submit" value="Next">
+        </div>
+    </form>
+</div>
+</body>
+</html>

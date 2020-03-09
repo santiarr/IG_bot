@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IG Bot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}" >
+</head>
+<body>
+<h4>By Santiago Arredondo</h4>
+<div class='title'>
+    <img id='IGicon' src="{{url_for('static', filename='images/Instagram-Icon.png')}}" width="8%">
+    <h1 id="'title">Instagram Bot</h1>
+</div>
+
+<div id="main-box">
+    <form method="post" name='pass' action="/next" style="font-size: 25px;">
+        <div style="padding-left:50px; padding-top: 100px;;font-family: Arial; color: white; font-weight: bold;">
+            <div style="display:block; padding-bottom: 20px">
+                <label >Add Hashtags (Limit is 10):</label>
+                <input name="hashtags" type="text">
+            </div>
+            <input type="submit" value='Add Tag'>
+        </div>
+    </form>
+</div>
+</body>
+</html>
